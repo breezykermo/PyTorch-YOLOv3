@@ -8,4 +8,4 @@ RUN pip install --upgrade pip && \
 WORKDIR /yolo
 COPY . /yolo
 
-RUN /bin/bash
+CMD ["python", "detect.py", "--image_folder", "data/samples"]
